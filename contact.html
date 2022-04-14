@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+	
+<html lang="en">
+<!-- All of the meta data for the page belongs in the header tag -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="icon" href="image/manhattan_neighborhoods.ico">
+    <link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- Link to the stylesheet -->
+     <link rel="stylesheet" href="css/style.css">
+    <title>CONTACT FORM</title>
+    </head>
+</head>
+
+<body>
+	<!-- Header is a sematic tag page that aids readability -->
+	<header>
+        <nav class="nav container">
+            <ul class= "navbar">
+                <li><a href = "index.html" >Introduction</a></li>
+                <li><a href = "fidi.html">Financial District</a></li>
+                <li><a href = "soho.html">SoHo</a></li>
+                <li><a href = "chinatown.html">Chinatown</a></li>
+                <li><a href = "villages.html">The Villages + Midtown </a></li>
+                <li class="active"><a href = "contact.html">Contact Form</a></li>
+                <li><a href = "gallery.html">Gallery</a></li></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+	<div class="flip-card-container" tabindex="0">
+        <div class="flip-card">
+          <div class="flip-card-front">
+            <img src= "image/liberty.png" alt="The Statue of Liberty" width="150">
+          </div>
+          <div class="flip-card-back" tabindex="0">
+            <p>
+              let me know what you liked!
+              <span> xoxo Sage</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+	<!-- contact form  -->
+    <section class = "contact" container id="contact">
+        <div class = "contact_form">
+			<h1> CONTACT FORM</h1>
+			<i class="fa fa-commenting-o" style="font-size:30px" ></i>
+			
+			<form
+		action="https://formspree.io/f/mlezlbka"
+		method="POST"
+	  >
+		<fieldset class = "form_details"> 
+		  <legend>Personal Information:</legend>
+		  <label for="name">Name</label>
+		  <input type="text" id = "name" name="Name"><br/>
+		  <label> Email: 
+			<input type="email" value = "email@umich.edu" name="address">
+		  </label><br/>
+		  <label for="location">Where are you from?:</label>
+		  <input type="text" id = "location" name = "location"><br>
+		  <label for="food">What was your favorite restuarant?:</label>
+		  <input type="text" id = "food" name = "place"><br>
+		  <input type = "submit" value = "Submit">
+		</fieldset>
+	  </form> 
+	  </div>
+    </section>
+
+</body>
+</main>
+
+<footer>
+	<p>Sage Pei &copy; 2022</p>
+</footer>
+
+<style>
+	footer{
+	position: fixed;
+  	left: 0;
+  	bottom: 0;
+	}
+</style>
