@@ -1,0 +1,394 @@
+*{
+  font-family:'Josefin Sans';
+  margin:0; 
+  padding:0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+  list-style:none;
+  text-decoration: none;
+}
+
+:root {
+  --main-color: rgb(55, 26, 221);
+  --second-color:var(--second-color);
+  --text-color: white;
+  --bg-color:#111222;;
+ 
+  --box-shadow: 2px 2px 18px rgb(14 52 54 /15%);
+} 
+
+a{
+  color: goldenrod;
+}
+
+footer{
+  color:white;
+  background-color: #111222;
+  width: 100%;
+}
+
+body{
+  background-color: var(--bg-color);
+  font-family:'Josefin Sans';
+  color:var(--text-color);
+}
+
+section{
+  padding: 4.5rem 0 3rem;
+}
+
+.container{
+  max-width: 1068px;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+header{
+  display: block;
+  width: 100%;
+  background: var(--bg-color);
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 1;
+}
+
+.nav{
+  display:flex;
+  align-items: center;
+  text-align: center;
+  justify-content:space-between;
+  padding: 20px 35px;
+  font-family:'Josefin Sans';
+}
+
+.navbar{
+  display: flex;
+}
+
+.navbar a{
+  padding: 8px 17px;
+  color: var(--text-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+}
+
+.navbar a:hover{
+  color: goldenrod;
+  text-decoration: underline;
+}
+
+.active{
+  background: rgb(121, 90, 13);
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration:underline;
+}
+
+.skip {
+  padding: 8px;
+  position: absolute;
+  background: #994d0b;
+  color:white;
+  left: 75%;
+  height: 30px;
+  transform: translateY(-400%);
+  transition: transform 0.3s;
+  z-index:1;
+}
+
+.skip:focus {
+  transform: translateY(0%);
+  
+}
+
+
+/* individual pages */
+.index{
+  margin-top: 5rem;
+  background:url("../image/NYC.jpeg");
+  background-repeat: no-repeat ; 
+  background-color: rgba(0, 0, 0, 0.6);
+	background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.fidi{
+  margin-top: 5rem;
+  background:url("../image/fidi.jpeg");
+  background-repeat: no-repeat ; 
+  background-color: rgba(0, 0, 0, 0.6);
+	background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.soho{
+  margin-top: 5rem;
+  background:url("../image/soho.jpeg");
+  background-repeat: no-repeat ; 
+  background-color: rgba(0, 0, 0, 0.6);
+	background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.chinatown{
+  margin-top: 5rem;
+  background:url("../image/chinatown.jpeg");
+  background-repeat: no-repeat ; 
+  background-color: rgba(0, 0, 0, 0.7);
+	background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.villages{
+  margin-top: 5rem;
+  background:url("../image/east.jpeg");
+  background-repeat: no-repeat ; 
+  background-color: rgba(0, 0, 0, 0.6);
+	background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.gallery{
+  margin-top: 70px;
+  background-color: #111222;
+}
+
+.about-text{
+  padding-left:40px; 
+}
+
+.about-text h1{
+  color:white;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p{
+  width: 450px;
+}
+
+.food{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(18rem,auto));
+  gap: 2rem;
+}
+
+.food-img img{
+  border-radius: 3rem; 
+}
+
+ .food-text h2{
+  font-size: 4rem;
+  font-family: 'Crimson Pro', serif;
+  margin: 2rem 0 2rem;
+ }
+
+.food-text p {
+  font-size: 2 rem;
+  margin: 2rem 0 2rem;
+}
+
+.contact_form{
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	color: white;
+	text-align: center; 
+}
+.contact_form h1{
+  animation-duration: 3s;
+  animation-name: slidein;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 50px;
+	text-transform: capitalize;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.form_details{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+button{
+	background: none;
+	border: 1px solid white;
+	color: white; 
+	font-size: 18px;
+	padding: 10px 25px;
+	border-radius: 6px;
+	font-family: 'Crimson Pro', serif;
+}
+
+button:hover{
+	background:black;
+	color:white;
+}
+/* flip card */
+.flip-card-container {
+  width: 150px;
+  height: 200px;
+  perspective: 1000px;
+  margin:auto;
+  padding-top: 200px;
+  
+}
+.flip-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.flip-card-container:hover .flip-card{ 
+  transform: rotateY(180deg); 
+}
+
+.flip-card-container:focus-within .flip-card{
+  transform: rotateY(180deg); 
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.flip-card-front {
+  background-color: transparent;
+  color: #fff;
+}
+.flip-card-back {
+  background-color: #517fa4;
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back p {
+  text-align: center;
+  font-size: 1.4rem;
+}
+.flip-card-back p span {
+  display: block;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 1.25rem;
+}
+@media (max-width: 1080px){
+  .navbar{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .container{
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 880px){
+  section{
+    padding: 4rem 0 3rem;
+  }
+  .flip-card{
+    display:none;
+  }
+}
+
+@media (max-width: 768px){
+  .nav{
+    padding: 10px 0px;
+  }
+  .navbar{
+    position:absolute;
+    top:100%;
+    right:0;
+    left:0;
+    right:0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    text-align: center;
+  }
+  .flip-card{
+    display:none;
+  }
+}
+
+@media (max-width: 442px){
+  .about-text{
+    padding:10px;
+    text-align: left;
+    width:50%;
+  }
+
+  html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .about-text p{
+    width:100%;
+  }
+
+  .flip-card{
+    display:none;
+  }
+}
+
+@media(prefers-reduced-motion){
+  .contact_form{
+    animation: dissolve;
+  }
+  *{
+    animation: dissolve;
+    scroll-behavior: unset;
+  }
+}
+
+
